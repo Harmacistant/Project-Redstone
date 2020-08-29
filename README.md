@@ -5,7 +5,7 @@ This is _not_ a launcher - simply a mod manager.  The idea here is to use the va
 
 Project Goals:
 
-* Simplify the cration of minecraft modpacks
+* Simplify the creation of minecraft modpacks
     * Upon creation, simply specify the version of minecraft to be used in the modpack.
     * From there, list mods that are compatible with the version specified
     * Allow for auto-dependency and conflict resolution when simply dragging and dropping mods into a folder.
