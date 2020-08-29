@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  frontend_web:
+    container_name: frontend_web
+    build: web/frontend
+    command: [python, frontend_app.py]
+    ports:
+      - "80:80"
+    volumes:
+      - ./web/frontend:/usr/src/web
+    environment:
+      - FLASK_ENV=development
+  backend_web:
+    container_name: backend_web
+    build: web/backend
+    command: [python, backend_app.py]
+    ports:
+      - "8800:80"
+    volumes:
+      - ./web/backend:/usr/src/web
+    environment:
+      - FLASK_ENV=development
